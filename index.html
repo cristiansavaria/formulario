@@ -45,7 +45,7 @@
     <div class="jumbotron mt-5 ">
       <h1 class="paginacion">Contacto</h1>
       <form>
-        <div class="row">
+        <div class="container">
           <div class="form-group">
             <div class="form-group">
               <label for="nombre">Nombre Completo</label>
@@ -70,7 +70,7 @@
                   <label class="form-check-label">Pasaporte</label>
                 </div>
               </div>
-              <input type="number" class="form-control" placeholder="Ingrese su identificación aquí"
+              <input type="text" class="form-control" placeholder="Ingrese su identificación aquí"
                 id="identificacion">
             </div>
 
@@ -79,13 +79,23 @@
               <input type="number" class="form-control" placeholder="XXXX XXXX" id="nrotel" min="0">
             </div>
 
+            <div>
+              <select name="ciudad" >
+                <option value="Ciudad">Ciudad</option>
+                <option value="Santiago">Santiago</option>
+                <option value="Concepción">Concepción</option>
+                <option value="Temuco">Temuco</option>
+
+              </select>
+            </div>
+
             <div class="form-group">
               <textarea class="form-control" placeholder="Comentario" id="comentario" rows="7"></textarea>
             </div>
           </div>
         </div>
         <div class="botones">
-          <input type="button" value="Limpiar">
+          <input type="reset" value="Limpiar">
           <input type="submit" value="Enviar">
         </div>
 
