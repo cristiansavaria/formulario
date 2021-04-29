@@ -45,26 +45,49 @@
     <div class="jumbotron mt-5 ">
       <h1 class="paginacion">Contacto</h1>
       <form>
+        <div class="row">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" class="form-control" placeholder="Nombre Completo" id="nombre">
+            </div>
 
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label"></label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput2" class="form-label"></label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Edad">
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput3" class="form-label"></label>
-          <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="E-mail">
-        </div>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Sugerencias" id="floatingTextarea2"
-            style="height: 200px"></textarea>
-          <label for="floatingTextarea2"></label>
-        </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" placeholder="example@gmail.com" id="email">
+            </div>
 
-        <button type="submit " class="btn  btn-dark">Enviar</button>
+            <div class="form-group">
+              <label for="identificacion">Identificación</label>
+              <div class="form-group">
+                <div class="container">
+                  <input type="radio" class="form-check-input" name="check" id="rut">
+                  <label class="form-check-label">Rut</label>
+                </div>
+
+                <div class="container">
+                  <input type="radio" class="form-check-input" name="check" id="pasaporte">
+                  <label class="form-check-label">Pasaporte</label>
+                </div>
+              </div>
+              <input type="number" class="form-control" placeholder="Ingrese su identificación aquí"
+                id="identificacion">
+            </div>
+
+            <div class="form-group">
+              <label for="nrotel">Numero de Teléfono</label>
+              <input type="number" class="form-control" placeholder="XXXX XXXX" id="nrotel" min="0">
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Comentario" id="comentario" rows="7"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="botones">
+          <input type="button" value="Limpiar">
+          <input type="submit" value="Enviar">
+        </div>
 
       </form>
 
